@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alex.juego3damian"
+    android:installLocation="preferExternal"
+    android:revisionCode="1"
+    android:versionName="1.0">
+    //con intallLocation preferExternal le diremos que guarde los datos en la SD externa
+
+    //Permiso para audio
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    //permiso para internet
+    <uses-permission android:name="android.permission.INTERNET" />
+    //Permiso para leer y escribir en la tarjeta SD externa
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    //Impide que el dispositivo entre en modo reposo si lleva mucho tiempo si tocar la pantalla
+    //se usa para aplicaciones que usan el acelerometro y por lo tanto no se toca la pantalla
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    //Con esto utilizamos la opcion multitactil de los moviles
+    //le ponemos required porke si un movil no la tiene no la puede utilizar
+    //asi descartamos a los dispositivos que no tengan multitouch.
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="true" />
+
+
+    //Especificamos la version de OPENGL ES
+    //2.0 API 8 y superior
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    //3.0 API 18 y superior
+    <uses-feature
+        android:glEsVersion="0x00030000"
+        android:required="false" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GLSurfaceViewTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="GLSurface View test" />
+        <activity
+            android:name=".FirstTriangleTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="First Triangle test" />
+        <activity
+            android:name=".Vertices3Test"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Vertices 3 Test" />
+        <activity
+            android:name=".ZBlendingTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="ZBlending Test" />
+        <activity
+            android:name=".TextureTriangleTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Texture Triangle Test" />
+        <activity
+            android:name=".CubeTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Cube Test" />
+        <activity
+            android:name=".BitmapTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Bitmap Test" />
+        <activity
+            android:name=".HierarchyTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Hierarchy Test" />
+        <activity
+            android:name=".LightTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Light Test" />
+        <activity
+            android:name=".EulerCameraTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Euler Camara Test" />
+        <activity
+            android:name=".ObjetTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Object Test" />
+        <activity
+            android:name=".CannonGravityTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Cannon Gravity Test" />
+        <activity
+            android:name=".CollisionTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Collision Test" />
+        <activity
+            android:name=".TextureAtlasTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Atlas Test" />
+        <activity
+            android:name=".SpriteBatcherTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Sprite Batcher Test" />
+        <activity
+            android:name=".AnimationTest"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Animation Test" />
+        <activity
+            android:name=".Demonik"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="DEMONIK" />
+
+    </application>
+
+</manifest>

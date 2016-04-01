@@ -1,0 +1,86 @@
+# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
+# File Created: 05.07.2008 18:28:46
+
+newmtl gunwood01
+	Ns 18.0429
+	Ni 1.0000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.3059 0.3059 0.3059
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\gunwood.jpg
+	map_Kd maps\gunwood.jpg
+	map_bump maps\shoer.jpg
+	bump maps\shoer.jpg
+
+newmtl BrushedMetal
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0863 0.0863 0.0863
+	Ks 2.0000 2.0000 2.0000
+	Ke 0.0000 0.0000 0.0000
+	map_refl maps\Map__40_Raytrace.tga
+
+newmtl gunbarl01
+	Ns 28.4874
+	Ni 1.0000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.2353 0.2353 0.2353
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\gunmetl.jpg
+	map_Kd maps\gunmetl.jpg
+	map_bump maps\shoetipr.jpg
+	bump maps\shoetipr.jpg
+
+newmtl gunmetl02
+	Ns 49.9337
+	Ni 1.0000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0000 0.0000 0.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\gunmetl.jpg
+	map_Kd maps\gunmetl.jpg
+	map_bump maps\shoetipr.jpg
+	bump maps\shoetipr.jpg
+
+newmtl chrom
+	Ns 46.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0000 0.0000 0.0000
+	Ks 1.0866 1.0866 1.0866
+	Ke 0.0000 0.0000 0.0000
+	map_refl maps\Map__1_fR-Raytrace.tga
+
+newmtl wire_165165165
+	Ns 32
+	d 1
+	Tr 1
+	Tf 1 1 1
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.6471 0.6471 0.6471
+	Ks 0.3500 0.3500 0.3500
